@@ -15,12 +15,29 @@ function App() {
   //   setCounter(counter-1)
   // }
   // asignment
+  // const [counter,setCounter]=useState(10)
+  // function increment(){
+  //   counter<20?setCounter(counter+1):console.log("Not allowed to increment more")
+  // }
+  // function decrement(){
+  //   counter>0?setCounter(counter-1):console.log("Not allowed to decrment more")
+  // }
+  //interview question
   const [counter,setCounter]=useState(10)
   function increment(){
-    counter<20?setCounter(counter+1):console.log("Not allowed to increment more")
+    //increment value by one only due to bundle and fibre thing
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // to make it work use callbacks
+    setCounter((prevValue)=> prevValue+1)
+    setCounter((prevValue)=> prevValue+1)
+    setCounter((prevValue)=> prevValue+1)
+    setCounter((prevValue)=> prevValue+1)
   }
   function decrement(){
-    counter>0?setCounter(counter-1):console.log("Not allowed to decrment more")
+    setCounter(counter-1)
   }
   return (
     <>
